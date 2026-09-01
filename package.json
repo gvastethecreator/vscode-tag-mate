@@ -14,12 +14,12 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/gvastethecreator/tag-mate.git"
+    "url": "https://github.com/gvastethecreator/vscode-tag-mate.git"
   },
   "bugs": {
-    "url": "https://github.com/gvastethecreator/tag-mate/issues"
+    "url": "https://github.com/gvastethecreator/vscode-tag-mate/issues"
   },
-  "homepage": "https://github.com/gvastethecreator/tag-mate#readme",
+  "homepage": "https://github.com/gvastethecreator/vscode-tag-mate#readme",
   "keywords": [
     "html",
     "xml",

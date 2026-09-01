@@ -1,5 +1,5 @@
-Repo: `X:\vscode-extensions\tag-mate`
-Remote: private (`gvastethecreator/tag-mate`)
+Repo: `X:\vscode-extensions\vscode-tag-mate`
+Remote: private (`gvastethecreator/vscode-tag-mate`)
 
 # PDR — Tag Mate
 
