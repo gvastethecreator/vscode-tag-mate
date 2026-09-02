@@ -1,7 +1,7 @@
-export const COMMANDS = [
-  "tagMate.changeTag",
-  "tagMate.goToMatchingTag",
-  "tagMate.selectTagPair",
-  "tagMate.removeSurroundingTag",
-  "tagMate.wrapSelection",
-] as const;
+export const COMMANDS = {
+  changeTag: "tagMate.changeTag",
+  goToMatchingTag: "tagMate.goToMatchingTag",
+  selectTagPair: "tagMate.selectTagPair",
+  removeSurroundingTag: "tagMate.removeSurroundingTag",
+  wrapSelection: "tagMate.wrapSelection",
+} as const;
