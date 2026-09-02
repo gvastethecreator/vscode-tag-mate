@@ -4,11 +4,11 @@ Remote: private (`gvastethecreator/vscode-tag-mate`)
 # PDR — Tag Mate
 
 ## Status
-Scaffolded · Priority P1
+0.1.0 release candidate · HTML scope complete · Priority P1
 
 ## Product summary
 
-Tag Mate is a focused structured-markup editing extension that combines reliable paired-tag operations into one modern tool: rename, close, navigate, select, remove, wrap and change matching tags across common markup languages.
+Tag Mate is a focused structured-markup editing extension for reliable explicit paired-tag operations: change, navigate, select, remove, and wrap.
 
 ## Opportunity
 
@@ -19,19 +19,15 @@ Historical category references:
 - https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
 - VS Code language features: https://code.visualstudio.com/api/language-extensions/programmatic-language-features
 
-## Target languages
+## Release scope
 
-Initial support candidates:
+Version 0.1.0 supports HTML. Commands remain disabled in other language modes.
 
-- HTML
-- XML
-- JSX
-- TSX
-- Vue
-- Svelte
-- Astro
+Later adapters are separate milestones:
 
-Ship only languages with robust parsing/fixture coverage. It is better to support four languages correctly than seven heuristically.
+- 0.2: JSX and TSX;
+- 0.3: XML;
+- Vue, Svelte, and Astro only after parser-backed demand and fixtures exist.
 
 ## MVP commands
 
@@ -69,7 +65,7 @@ Preferred strategy order:
 2. lightweight language-specific parsers/tokenizers;
 3. Tree-sitter only if dependency cost is justified and packaging/web implications are understood.
 
-Keep a common `TagPair` domain model and language adapters.
+The accepted 0.1.0 decision is recorded in `docs/adr/001-html-parser-strategy.md`: Microsoft's browser-safe HTML language service feeds a common immutable `TagPair` model. It is bundled into Node and web entry points. Parsing is command-driven, cached by document version, bounded to 64 entries, and rejected above 2 MiB of UTF-8 input.
 
 ```ts
 interface TagPair {
@@ -87,9 +83,8 @@ interface TagPair {
 - nested same-name elements;
 - self-closing tags;
 - void HTML elements;
-- JSX components vs intrinsic tags;
-- fragments `<>...</>`;
-- namespaced XML;
+- custom elements and HTML mixed case;
+- optional HTML end tags;
 - attributes containing `>` or strings;
 - template expressions;
 - malformed/incomplete documents while typing;
@@ -98,7 +93,7 @@ interface TagPair {
 
 ## Auto-close behavior
 
-Do not override native behavior blindly. If implemented:
+Not included in 0.1.0. VS Code's native behavior remains untouched. If later implemented:
 
 - default to disabled where VS Code/language service already provides equivalent behavior;
 - expose only for language modes where measured benefit exists;
@@ -109,7 +104,8 @@ Do not override native behavior blindly. If implemented:
 
 - `Change Tag`: Input Box prefilled with current tag name.
 - `Wrap Selection`: Quick Pick/Input Box for tag name; never inject unsanitized arbitrary syntax beyond a validated tag identifier.
-- matching-tag navigation should work from opening name, closing name and element body when unambiguous.
+- matching-tag navigation works from opening or closing tag syntax; arbitrary body content does not trigger ancestor guessing in 0.1.0.
+- multi-cursor operations deduplicate identical targets and reject overlapping targets atomically.
 
 ## Non-goals
 
@@ -125,22 +121,13 @@ Do not override native behavior blindly. If implemented:
 ```text
 src/
 ├─ extension.ts
-├─ core/
-│  ├─ tagPair.ts
-│  └─ transforms.ts
-├─ adapters/
-│  ├─ html.ts
-│  ├─ xml.ts
-│  ├─ jsx.ts
-│  └─ ...
-├─ commands/
-│  ├─ changeTag.ts
-│  ├─ matchTag.ts
-│  ├─ removeTag.ts
-│  ├─ wrapSelection.ts
-│  └─ selectTag.ts
-└─ platform/
-   └─ editor.ts
+├─ commandHandlers.ts
+└─ core/
+   ├─ model.ts
+   ├─ htmlPolicy.ts
+   ├─ htmlDocument.ts
+   ├─ editPlanner.ts
+   └─ documentCache.ts
 ```
 
 Transform generation should be pure and tested separately from edit application.
@@ -160,7 +147,7 @@ Avoid Proposed APIs.
 | Environment | Goal |
 | --- | --- |
 | Desktop | Full |
-| Web | Full if parser dependencies are browser-safe |
+| Web | Full |
 | Virtual Workspace | Full; document-only operations |
 | Restricted Mode | Full; no code execution |
 | Remote | Full |
@@ -174,7 +161,8 @@ This project should be designed as web-compatible from the beginning unless pars
 - never scan workspace;
 - debounce live auto-rename behavior if added;
 - commands should feel instantaneous on normal source files;
-- establish stress fixtures for very large generated HTML and define a safe fallback.
+- reject active documents above 2 MiB of UTF-8 input;
+- keep representative 100 KiB parsing below 20 ms and 1 MiB below 150 ms after warmup.
 
 ## Testing
 
@@ -185,8 +173,8 @@ Required regression families:
 - nested tags;
 - malformed tags;
 - mixed embedded languages;
-- JSX fragments/components;
-- XML namespaces;
+- quoted angle brackets, comments, doctypes, and raw `script`/`style` text;
+- optional end tags and stray closing tags;
 - unicode attributes/content;
 - large files;
 - CRLF/LF.
@@ -196,7 +184,8 @@ Integration:
 - commands apply one atomic workspace edit;
 - undo restores both opening and closing names together;
 - context menu visibility matches language selectors;
-- web host if supported.
+- writable virtual workspace in a web host;
+- clean-profile installation from the final VSIX.
 
 ## Acceptance criteria
 
@@ -217,4 +206,4 @@ Integration:
 
 ## Definition of done
 
-Parser/adapters, transformations, tests, web/remote review, README, Marketplace assets, release automation and explicit comparison with native VS Code capabilities are complete.
+The HTML adapter, five transforms, desktop/web/virtual/restricted compatibility, tests, README, direct Imagegen icon, real-product preview, VSIX audit, and release-candidate automation are complete. Later language milestones do not block 0.1.0.

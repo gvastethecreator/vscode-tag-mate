@@ -1,6 +1,7 @@
 # Changelog
 
-## 0.0.1 — Unreleased
+## 0.1.0 — Unreleased
 
-- Scaffold from the vscode-extensions portfolio template.
-- Command Palette entries for Tag Mate. Implementation is not started.
+- Implemented Change Tag, Go to Matching Tag, Select Tag Pair, Remove Surrounding Tag, and Wrap Selection with Tag for HTML.
+- Added syntax-aware nested matching, HTML void and optional-end policies, safe malformed-source failures, and atomic multi-cursor edit planning.
+- Added desktop, web, virtual-workspace, performance, media, and packaged-VSIX verification.

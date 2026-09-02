@@ -10,7 +10,7 @@ This repository starts private. Do not publish to the Marketplace until PDR v1 i
 pnpm run vsix
 ```
 
-Output: `tag-mate-<version>.vsix` (gitignored).
+Output: `tag-mate.vsix` (gitignored). Run `pnpm run inspect:vsix` before installation.
 
 ## Browser upload
 
@@ -18,4 +18,4 @@ Output: `tag-mate-<version>.vsix` (gitignored).
 2. Sign in with the Microsoft account that owns publisher `gvastethecreator`
 3. Choose **New extension** → **Visual Studio Code** → upload the VSIX
 
-`package.json` → `icon` must be PNG. Keep SVG sources out of the VSIX (see `.vscodeignore`).
+`package.json` → `icon` is a direct downsample of the accepted native-alpha Imagegen PNG. The strict `files` allowlist keeps sources, tests, and build tools out of the VSIX.
