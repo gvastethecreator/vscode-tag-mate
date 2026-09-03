@@ -204,6 +204,10 @@ Integration:
 - customizable void/custom-element rules;
 - additional templating adapters based on demand.
 
+## Assets
+
+`media/source/tag-mate-imagegen.png` is the accepted native-alpha Imagegen source. `media/icon.png` is its direct 256×256 downsample. The obsolete SVG duplicate is removed so the raster pipeline has one authority. `media/preview.png` remains the real VS Code runtime capture on a transparent 1200×800 canvas.
+
 ## Definition of done
 
 The HTML adapter, five transforms, desktop/web/virtual/restricted compatibility, tests, README, direct Imagegen icon, real-product preview, VSIX audit, and release-candidate automation are complete. Later language milestones do not block 0.1.0.
