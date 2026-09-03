@@ -14,13 +14,23 @@
 
 ---
 
-### Getting started
+### Use
 
-1) Clone [gvastethecreator/vscode-tag-mate](https://github.com/gvastethecreator/vscode-tag-mate), then run `pnpm install`.
-2) Press F5 (`Run Extension`).
-3) Place the cursor in a tag, then run **Change Tag**.
+Open an HTML file. Run a Tag Mate command from the Command Palette. **Change Tag** is also available from the editor context menu.
+
+- **Change Tag** updates opening and closing names together.
+- **Go to Matching Tag** jumps between concrete opening and closing tags.
+- **Select Tag Pair** selects the complete element or one void/self-closing tag.
+- **Remove Surrounding Tag** removes only a concrete wrapper pair.
+- **Wrap Selection with Tag** wraps one or more non-overlapping selections.
 
 <img src="media/preview.png" alt="Preview" width="100%" />
+
+Tag Mate 0.1 supports HTML. It understands nested same-name elements, quoted angle brackets, comments, raw script/style text, multiline tags, custom elements, void elements, mixed case, and optional end tags. Unsafe, malformed, overlapping, or larger-than-2-MiB operations stop without editing. It adds no webview, telemetry, workspace scan, default keybinding, or automatic rename/close behavior.
+
+### Development
+
+Requires pnpm 12. `pnpm install`, then `pnpm run quality`. Press F5 to run the extension. See [development notes](docs/development.md).
 
 ---
 

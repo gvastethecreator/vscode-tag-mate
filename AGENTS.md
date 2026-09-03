@@ -1,6 +1,6 @@
 # Tag Mate
 
-VS Code extension (`gvastethecreator.tag-mate`). pnpm. TypeScript in `src/`. esbuild writes `dist/extension.js`.
+VS Code extension (`gvastethecreator.tag-mate`). pnpm. TypeScript in `src/`. esbuild writes Node and browser bundles under `dist/`.
 
 ## Commands
 
@@ -41,7 +41,8 @@ Single-context: root `CONTEXT.md` plus `docs/adr/`. See `docs/agents/domain.md`.
 
 ## Layout
 
-- `src/extension.ts` — activate and command registration
+- `src/extension.ts` — activation and cache lifecycle
+- `src/commandHandlers.ts` — VS Code command integration
 - `src/commands.ts` — command ids
 - `src/core/` — pure logic and tests
 - `test-workspace/` — Extension Host folder
