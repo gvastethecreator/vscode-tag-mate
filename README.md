@@ -24,7 +24,7 @@ Open an HTML file. Run a Tag Mate command from the Command Palette. **Change Tag
 - **Remove Surrounding Tag** removes only a concrete wrapper pair.
 - **Wrap Selection with Tag** wraps one or more non-overlapping selections.
 
-<img src="media/preview.png" alt="Preview" width="100%" />
+<img src="media/preview.png" alt="Tag Mate before and after renaming a paired HTML tag" width="100%" />
 
 Tag Mate 0.1 supports HTML. It understands nested same-name elements, quoted angle brackets, comments, raw script/style text, multiline tags, custom elements, void elements, mixed case, and optional end tags. Unsafe, malformed, overlapping, or larger-than-2-MiB operations stop without editing. It adds no webview, telemetry, workspace scan, default keybinding, or automatic rename/close behavior.
 

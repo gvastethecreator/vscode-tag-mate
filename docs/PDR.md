@@ -1,5 +1,5 @@
-Repo: `X:\vscode-extensions\vscode-tag-mate`
-Remote: private (`gvastethecreator/vscode-tag-mate`)
+Repo: `https://github.com/gvastethecreator/vscode-tag-mate`
+Remote: public (`gvastethecreator/vscode-tag-mate`)
 
 # PDR — Tag Mate
 
@@ -206,7 +206,7 @@ Integration:
 
 ## Assets
 
-`media/source/tag-mate-imagegen.png` is the accepted native-alpha Imagegen source. `media/icon.png` is its direct 256×256 downsample. The obsolete SVG duplicate is removed so the raster pipeline has one authority. `media/preview.png` remains the real VS Code runtime capture on a transparent 1200×800 canvas.
+`media/source/tag-mate-imagegen.png` is the accepted native-alpha Imagegen source. `media/icon.png` is its direct 256×256 downsample. The obsolete SVG duplicate is removed so the raster pipeline has one authority. `media/preview.png` is the real installed-extension before-and-after editor capture, tightly cropped around the paired tag rename with a transparent outer edge.
 
 ## Definition of done
 
