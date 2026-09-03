@@ -3,7 +3,7 @@
 
 # Tag Mate
 
-**Change, match, wrap, and remove paired markup tags**
+**Change, match, wrap, and remove paired HTML tags.**
 
 <p align="center">
   <a href="https://github.com/gvastethecreator/vscode-tag-mate"><img alt="GitHub" src="https://shieldcn.dev/badge/github.png?variant=outline&size=xs&theme=blue&logo=github" /></a>
@@ -12,25 +12,22 @@
 </p>
 </div>
 
----
-
-### Use
-
-Open an HTML file. Run a Tag Mate command from the Command Palette. **Change Tag** is also available from the editor context menu.
-
-- **Change Tag** updates opening and closing names together.
-- **Go to Matching Tag** jumps between concrete opening and closing tags.
-- **Select Tag Pair** selects the complete element or one void/self-closing tag.
-- **Remove Surrounding Tag** removes only a concrete wrapper pair.
-- **Wrap Selection with Tag** wraps one or more non-overlapping selections.
-
 <img src="media/preview.png" alt="Tag Mate before and after renaming a paired HTML tag" width="100%" />
 
-Tag Mate 0.1 supports HTML. It understands nested same-name elements, quoted angle brackets, comments, raw script/style text, multiline tags, custom elements, void elements, mixed case, and optional end tags. Unsafe, malformed, overlapping, or larger-than-2-MiB operations stop without editing. It adds no webview, telemetry, workspace scan, default keybinding, or automatic rename/close behavior.
+## Highlights
 
-### Development
+- Rename opening and closing tags together.
+- Jump to or select a matching tag pair.
+- Remove a wrapper without removing its content.
+- Wrap one or more selections with a tag.
 
-Requires pnpm 12. `pnpm install`, then `pnpm run quality`. Press F5 to run the extension. See [development notes](docs/development.md).
+## Use
+
+Open an HTML file and run a **Tag Mate** command from the Command Palette. **Change Tag** is also available from the editor context menu.
+
+Tag Mate handles nested, custom, void, multiline, and mixed-case HTML tags. Unsafe or malformed operations stop without editing. No webview, telemetry, workspace scan, or automatic rename behavior.
+
+More details: [product contract](docs/PDR.md) · [parser design](docs/adr/001-html-parser-strategy.md) · [development](docs/development.md)
 
 ---
 
