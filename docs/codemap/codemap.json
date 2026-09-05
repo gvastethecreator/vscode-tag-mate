@@ -1,0 +1,359 @@
+{
+  "generated_at": "2026-09-05T04:45:27Z",
+  "generated_from_commit": "92b4199f8fdd9337a9ab9143f7193420cfe6ccd0",
+  "scope": [
+    "."
+  ],
+  "nodes": [
+    {
+      "id": "esbuild",
+      "path": "esbuild.cjs",
+      "type": "interface",
+      "boundary": "Esbuild",
+      "entrypoints": [
+        "esbuild.cjs:main"
+      ],
+      "tests": [],
+      "callers": [
+        {
+          "id": "repository",
+          "type": "calls"
+        }
+      ],
+      "callees": [
+        {
+          "id": "external-dependencies",
+          "type": "imports"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "esbuild.cjs",
+            "symbol": "main"
+          }
+        ]
+      }
+    },
+    {
+      "id": "external-dependencies",
+      "path": "esbuild.cjs",
+      "type": "external",
+      "boundary": "External",
+      "entrypoints": [
+        "esbuild.cjs:esbuild"
+      ],
+      "tests": [],
+      "callers": [
+        {
+          "id": "esbuild",
+          "type": "imports"
+        },
+        {
+          "id": "scripts",
+          "type": "imports"
+        },
+        {
+          "id": "src",
+          "type": "imports"
+        },
+        {
+          "id": "src-core",
+          "type": "imports"
+        }
+      ],
+      "callees": [],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "esbuild.cjs",
+            "symbol": "esbuild"
+          }
+        ]
+      }
+    },
+    {
+      "id": "repository",
+      "path": "package.json",
+      "type": "module",
+      "boundary": "Repository",
+      "entrypoints": [
+        "package.json:{"
+      ],
+      "tests": [],
+      "callers": [],
+      "callees": [
+        {
+          "id": "esbuild",
+          "type": "calls"
+        },
+        {
+          "id": "scripts",
+          "type": "calls"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "package.json",
+            "symbol": "{"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scripts",
+      "path": "scripts",
+      "type": "service",
+      "boundary": "Scripts",
+      "entrypoints": [
+        "scripts/build-web-tests.mjs:root"
+      ],
+      "tests": [],
+      "callers": [
+        {
+          "id": "repository",
+          "type": "calls"
+        }
+      ],
+      "callees": [
+        {
+          "id": "external-dependencies",
+          "type": "imports"
+        },
+        {
+          "id": "src-core",
+          "type": "imports"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "scripts/build-web-tests.mjs",
+            "symbol": "root"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src",
+      "path": "src",
+      "type": "module",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/commandHandlers.ts:showFailure"
+      ],
+      "tests": [],
+      "callers": [],
+      "callees": [
+        {
+          "id": "external-dependencies",
+          "type": "imports"
+        },
+        {
+          "id": "src-core",
+          "type": "imports"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/commandHandlers.ts",
+            "symbol": "showFailure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "src-core",
+      "path": "src/core",
+      "type": "service",
+      "boundary": "Src",
+      "entrypoints": [
+        "src/core/documentCache.ts:HtmlDocumentCache"
+      ],
+      "tests": [
+        "src/core/documentCache.test.ts",
+        "src/core/editPlanner.test.ts",
+        "src/core/htmlDocument.test.ts"
+      ],
+      "callers": [
+        {
+          "id": "scripts",
+          "type": "imports"
+        },
+        {
+          "id": "src",
+          "type": "imports"
+        }
+      ],
+      "callees": [
+        {
+          "id": "external-dependencies",
+          "type": "imports"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/core/documentCache.ts",
+            "symbol": "HtmlDocumentCache"
+          }
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "esbuild",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "esbuild.cjs",
+            "symbol": "esbuild"
+          }
+        ]
+      }
+    },
+    {
+      "from": "repository",
+      "to": "esbuild",
+      "type": "calls",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "package.json",
+            "symbol": "esbuild.cjs"
+          }
+        ]
+      }
+    },
+    {
+      "from": "repository",
+      "to": "scripts",
+      "type": "calls",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "package.json",
+            "symbol": "scripts/inspect-vsix.mjs"
+          },
+          {
+            "path": "package.json",
+            "symbol": "scripts/performance.mjs"
+          },
+          {
+            "path": "package.json",
+            "symbol": "scripts/build-web-tests.mjs"
+          }
+        ]
+      }
+    },
+    {
+      "from": "scripts",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "scripts/build-web-tests.mjs",
+            "symbol": "esbuild"
+          },
+          {
+            "path": "scripts/check-media.mjs",
+            "symbol": "sharp"
+          },
+          {
+            "path": "scripts/inspect-vsix.mjs",
+            "symbol": "yauzl"
+          }
+        ]
+      }
+    },
+    {
+      "from": "scripts",
+      "to": "src-core",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "scripts/performance.mjs",
+            "symbol": "../src/core/htmlDocument.ts"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/commandHandlers.ts",
+            "symbol": "vscode"
+          },
+          {
+            "path": "src/extension.ts",
+            "symbol": "vscode"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src",
+      "to": "src-core",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/commandHandlers.ts",
+            "symbol": "./core/documentCache.ts"
+          },
+          {
+            "path": "src/commandHandlers.ts",
+            "symbol": "./core/editPlanner.ts"
+          },
+          {
+            "path": "src/commandHandlers.ts",
+            "symbol": "./core/htmlPolicy.ts"
+          }
+        ]
+      }
+    },
+    {
+      "from": "src-core",
+      "to": "external-dependencies",
+      "type": "imports",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "src/core/htmlDocument.ts",
+            "symbol": "vscode-html-languageservice/lib/umd/htmlLanguageTypes.js"
+          },
+          {
+            "path": "src/core/htmlDocument.ts",
+            "symbol": "vscode-html-languageservice/lib/umd/parser/htmlScanner.js"
+          }
+        ]
+      }
+    }
+  ],
+  "flows": []
+}
