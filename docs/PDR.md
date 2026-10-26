@@ -4,7 +4,7 @@ Remote: public (`gvastethecreator/vscode-tag-mate`)
 # PDR — Tag Mate
 
 ## Status
-0.1.0 release candidate · HTML scope complete · Priority P1
+0.1.1 release candidate · HTML scope complete · Priority P1
 
 ## Product summary
 

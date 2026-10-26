@@ -2,7 +2,7 @@
   "name": "tag-mate",
   "displayName": "Tag Mate",
   "description": "Change, match, wrap, and remove paired HTML tags.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packageManager": "pnpm@12.15.0",
   "publisher": "gvastethecreator",
   "author": {

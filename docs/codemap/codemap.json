@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-26T04:43:31Z",
-  "generated_from_commit": "920d146d2b77691ff42b3423d90761780231834d",
+  "generated_at": "2026-10-26T07:24:29Z",
+  "generated_from_commit": "9fe1be9495424b336058eabafebcc07055f41ca5",
   "scope": [
     "."
   ],
@@ -54,8 +54,8 @@
         "path": "package.json",
         "origin": "tracked",
         "state": "present",
-        "digest": "0588d9f15a98ee48208ba5232058aace2e59eaa049909026eb5c794118d670f8",
-        "size": 4064
+        "digest": "825e53b969f10e4b55a30e1c60a8595c878618d7a12c03446bfe1b9f4f5f7f46",
+        "size": 4210
       },
       {
         "path": "scripts/build-web-tests.mjs",
@@ -75,8 +75,8 @@
         "path": "scripts/inspect-vsix.mjs",
         "origin": "tracked",
         "state": "present",
-        "digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
-        "size": 4440
+        "digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
+        "size": 4613
       },
       {
         "path": "scripts/performance.mjs",
@@ -240,7 +240,7 @@
         "size": 375
       }
     ],
-    "digest": "7f8f0955d0e9db5a87fdb5752fa09195070fbd60a20a7c2a4c241cd2dd44a3cd"
+    "digest": "c411d351470cc72df9d6c92b0066d8174bbcab5c049ded334274cc091a702096"
   },
   "coverage": {
     "discovered_files": 54,
@@ -683,6 +683,12 @@
         "path": "scripts/inspect-vsix.mjs",
         "line": 41,
         "reference": "assert",
+        "reason": "object-member-call-not-resolved"
+      },
+      {
+        "path": "scripts/inspect-vsix.mjs",
+        "line": 41,
+        "reference": "path",
         "reason": "object-member-call-not-resolved"
       },
       {
@@ -2586,7 +2592,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "import",
             "resolved_target": "external:javascript:node:assert"
           },
@@ -3019,11 +3025,11 @@
           },
           {
             "path": "scripts/inspect-vsix.mjs",
-            "symbol": "import { readdir, stat } from \"node:fs/promises\";",
+            "symbol": "import { readFile, readdir, stat } from \"node:fs/promises\";",
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "import",
             "resolved_target": "external:javascript:node:fs"
           },
@@ -3276,7 +3282,7 @@
             "start_line": 3,
             "end_line": 3,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "import",
             "resolved_target": "external:javascript:node:path"
           }
@@ -4026,7 +4032,7 @@
             "start_line": 4,
             "end_line": 4,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "import",
             "resolved_target": "external:javascript:node:url"
           }
@@ -4415,7 +4421,7 @@
             "start_line": 5,
             "end_line": 5,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "import",
             "resolved_target": "external:javascript:yauzl"
           }
@@ -4452,7 +4458,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "json-manifest",
-            "source_digest": "0588d9f15a98ee48208ba5232058aace2e59eaa049909026eb5c794118d670f8",
+            "source_digest": "825e53b969f10e4b55a30e1c60a8595c878618d7a12c03446bfe1b9f4f5f7f46",
             "kind": "file"
           }
         ]
@@ -4644,7 +4650,7 @@
             "start_line": 7,
             "end_line": 7,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "definition"
           },
           {
@@ -4653,7 +4659,7 @@
             "start_line": 8,
             "end_line": 8,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "definition"
           },
           {
@@ -4662,7 +4668,7 @@
             "start_line": 9,
             "end_line": 9,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "definition"
           }
         ]
@@ -7503,7 +7509,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "import",
             "resolved_target": "external:javascript:node:assert"
           }
@@ -7516,7 +7522,7 @@
       "to": "external:javascript:node:fs",
       "type": "calls",
       "type_only": false,
-      "evidence_count": 2,
+      "evidence_count": 3,
       "evidence": {
         "status": "verified",
         "locations": [
@@ -7526,7 +7532,7 @@
             "start_line": 11,
             "end_line": 11,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "call",
             "resolved_target": "external:javascript:node:fs",
             "target_symbol": "readdir"
@@ -7537,10 +7543,21 @@
             "start_line": 13,
             "end_line": 13,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "call",
             "resolved_target": "external:javascript:node:fs",
             "target_symbol": "stat"
+          },
+          {
+            "path": "scripts/inspect-vsix.mjs",
+            "symbol": "readFile(path.join(root, \"package.json\"), \"utf8\")",
+            "start_line": 41,
+            "end_line": 41,
+            "extractor": "tree-sitter-javascript",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
+            "kind": "call",
+            "resolved_target": "external:javascript:node:fs",
+            "target_symbol": "readFile"
           }
         ]
       }
@@ -7557,11 +7574,11 @@
         "locations": [
           {
             "path": "scripts/inspect-vsix.mjs",
-            "symbol": "import { readdir, stat } from \"node:fs/promises\";",
+            "symbol": "import { readFile, readdir, stat } from \"node:fs/promises\";",
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "import",
             "resolved_target": "external:javascript:node:fs"
           }
@@ -7584,7 +7601,7 @@
             "start_line": 3,
             "end_line": 3,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "import",
             "resolved_target": "external:javascript:node:path"
           }
@@ -7607,7 +7624,7 @@
             "start_line": 7,
             "end_line": 7,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "call",
             "resolved_target": "external:javascript:node:url",
             "target_symbol": "fileURLToPath"
@@ -7631,7 +7648,7 @@
             "start_line": 4,
             "end_line": 4,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "import",
             "resolved_target": "external:javascript:node:url"
           }
@@ -7654,7 +7671,7 @@
             "start_line": 5,
             "end_line": 5,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
+            "source_digest": "c213930b52b0e2d69f3069ae238c7aacbb278912624622d832415fec60970ba1",
             "kind": "import",
             "resolved_target": "external:javascript:yauzl"
           }
@@ -10595,7 +10612,7 @@
     }
   ],
   "triggers": [],
-  "source_digest": "d021d513bbed3019f0c8f93aac28f403b8ee880189f39bbae260e829c810e543",
+  "source_digest": "a908bf915ac50f8105272623f622741ba91870424d424d58de667cb97c9ad241",
   "changes": {
     "added_nodes": [],
     "removed_nodes": [],
@@ -10606,5 +10623,5 @@
     "changed": false,
     "changed_node_ids": []
   },
-  "generation_id": "b32454e94c708e47ae90f73079e0befe2b7e3bfbea9e67b957f9036825a25c29"
+  "generation_id": "2342c974b35c0e07e972b72049ed85dedbc9f66def550c57e6eb5b2f79a80da7"
 }
