@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "source_commit": "99f7b448e58e4bbc70f12c03269c07cfa7543abd",
+  "source_commit": "920d146d2b77691ff42b3423d90761780231834d",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-07T03:20:47Z",
-  "generation_id": "acb8500f361e17d21ed90ee43d297dc69dc3aa6969ea12a29e2baf8584f805e0",
+  "generated_at": "2026-10-26T04:43:31Z",
+  "generation_id": "b32454e94c708e47ae90f73079e0befe2b7e3bfbea9e67b957f9036825a25c29",
   "analysis": {
     "version": "syntax-1",
-    "digest": "3c79d1c345c40f78e72d86e76fcdb0c240c137eb03778015ce78f994b43e3ccf"
+    "digest": "aac5588c813568478eb34b9cb090e19685ad183efe6d8b3496f261834a7c0f44"
   },
   "inventory": {
     "policy": {
@@ -53,8 +53,8 @@
         "path": "package.json",
         "origin": "tracked",
         "state": "present",
-        "digest": "db8bf3d32d85b335c7ca145b7b2a8a664ef5e39210970076225dc1d282fa130c",
-        "size": 4088
+        "digest": "0588d9f15a98ee48208ba5232058aace2e59eaa049909026eb5c794118d670f8",
+        "size": 4064
       },
       {
         "path": "scripts/build-web-tests.mjs",
@@ -86,7 +86,7 @@
       },
       {
         "path": "scripts/release-artifact.mjs",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
         "size": 5219
@@ -102,8 +102,8 @@
         "path": "src/commandHandlers.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
-        "size": 10088
+        "digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
+        "size": 10512
       },
       {
         "path": "src/commands.ts",
@@ -144,15 +144,15 @@
         "path": "src/core/htmlDocument.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
-        "size": 4140
+        "digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
+        "size": 4876
       },
       {
         "path": "src/core/htmlDocument.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
-        "size": 6930
+        "digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
+        "size": 7926
       },
       {
         "path": "src/core/htmlPolicy.ts",
@@ -165,8 +165,8 @@
         "path": "src/core/model.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "8d409e3ea61ef7ec930df2a88e7731879be2f5dafd35ccbaaa27cf573b6cb687",
-        "size": 1498
+        "digest": "8bf48f4712f461e4f8dc54a4fd9e0edc157d8667d36f30ebcd51d5c71754288d",
+        "size": 1525
       },
       {
         "path": "src/extension.ts",
@@ -239,12 +239,12 @@
         "size": 375
       }
     ],
-    "digest": "49a7decd923d89bdde7bee5c776096889f3eb3fec1946111d51d87091a3797db"
+    "digest": "7f8f0955d0e9db5a87fdb5752fa09195070fbd60a20a7c2a4c241cd2dd44a3cd"
   },
-  "source_digest": "520209575977662079861bad066f26442af49a7afe8f681d039869f4ce187f66",
+  "source_digest": "d021d513bbed3019f0c8f93aac28f403b8ee880189f39bbae260e829c810e543",
   "artifact_hashes": {
-    "codemap.json": "c6d487458f61731a5c6acbc178a983d675af007b66f3f04052dbe7bdc44c7ebe",
-    "codemap.md": "6bd6e6b3f80a4c0e87e42098e8a5dc0d79e5f02c0d78dc33b065f62f80b51821",
-    "codemap.html": "2c838cc627bbc446dadb8a180a7f4a0971b6099a468d2fc33c73b3e0459ec87a"
+    "codemap.json": "18eb7f6848d9a7b3cb7318b100260fa1c99a0b32bdc0a6e1e663a57b14e33c0f",
+    "codemap.md": "8a6865d48d2a26d32aa118eed7306ede1ac70f06cc2a3f1b653505dc0d656fc6",
+    "codemap.html": "3c5f54bacb25d10736504aafba3692e49ac497e769feb89ded9193e0a6432369"
   }
 }

@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-07T03:20:47Z",
-  "generated_from_commit": "99f7b448e58e4bbc70f12c03269c07cfa7543abd",
+  "generated_at": "2026-10-26T04:43:31Z",
+  "generated_from_commit": "920d146d2b77691ff42b3423d90761780231834d",
   "scope": [
     "."
   ],
   "analysis": {
     "version": "syntax-1",
-    "digest": "3c79d1c345c40f78e72d86e76fcdb0c240c137eb03778015ce78f994b43e3ccf"
+    "digest": "aac5588c813568478eb34b9cb090e19685ad183efe6d8b3496f261834a7c0f44"
   },
   "inventory": {
     "policy": {
@@ -54,8 +54,8 @@
         "path": "package.json",
         "origin": "tracked",
         "state": "present",
-        "digest": "db8bf3d32d85b335c7ca145b7b2a8a664ef5e39210970076225dc1d282fa130c",
-        "size": 4088
+        "digest": "0588d9f15a98ee48208ba5232058aace2e59eaa049909026eb5c794118d670f8",
+        "size": 4064
       },
       {
         "path": "scripts/build-web-tests.mjs",
@@ -87,7 +87,7 @@
       },
       {
         "path": "scripts/release-artifact.mjs",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
         "size": 5219
@@ -103,8 +103,8 @@
         "path": "src/commandHandlers.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
-        "size": 10088
+        "digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
+        "size": 10512
       },
       {
         "path": "src/commands.ts",
@@ -145,15 +145,15 @@
         "path": "src/core/htmlDocument.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
-        "size": 4140
+        "digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
+        "size": 4876
       },
       {
         "path": "src/core/htmlDocument.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
-        "size": 6930
+        "digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
+        "size": 7926
       },
       {
         "path": "src/core/htmlPolicy.ts",
@@ -166,8 +166,8 @@
         "path": "src/core/model.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "8d409e3ea61ef7ec930df2a88e7731879be2f5dafd35ccbaaa27cf573b6cb687",
-        "size": 1498
+        "digest": "8bf48f4712f461e4f8dc54a4fd9e0edc157d8667d36f30ebcd51d5c71754288d",
+        "size": 1525
       },
       {
         "path": "src/extension.ts",
@@ -240,7 +240,7 @@
         "size": 375
       }
     ],
-    "digest": "49a7decd923d89bdde7bee5c776096889f3eb3fec1946111d51d87091a3797db"
+    "digest": "7f8f0955d0e9db5a87fdb5752fa09195070fbd60a20a7c2a4c241cd2dd44a3cd"
   },
   "coverage": {
     "discovered_files": 54,
@@ -1592,6 +1592,48 @@
         "reason": "object-member-call-not-resolved"
       },
       {
+        "path": "src/core/htmlDocument.test.ts",
+        "line": 96,
+        "reference": "assert",
+        "reason": "object-member-call-not-resolved"
+      },
+      {
+        "path": "src/core/htmlDocument.test.ts",
+        "line": 97,
+        "reference": "assert",
+        "reason": "object-member-call-not-resolved"
+      },
+      {
+        "path": "src/core/htmlDocument.test.ts",
+        "line": 98,
+        "reference": "assert",
+        "reason": "object-member-call-not-resolved"
+      },
+      {
+        "path": "src/core/htmlDocument.test.ts",
+        "line": 99,
+        "reference": "assert",
+        "reason": "object-member-call-not-resolved"
+      },
+      {
+        "path": "src/core/htmlDocument.test.ts",
+        "line": 100,
+        "reference": "assert",
+        "reason": "object-member-call-not-resolved"
+      },
+      {
+        "path": "src/core/htmlDocument.test.ts",
+        "line": 101,
+        "reference": "assert",
+        "reason": "object-member-call-not-resolved"
+      },
+      {
+        "path": "src/core/htmlDocument.test.ts",
+        "line": 102,
+        "reference": "assert",
+        "reason": "object-member-call-not-resolved"
+      },
+      {
         "path": "test/integration/run-vsix.mjs",
         "line": 9,
         "reference": "path",
@@ -2232,7 +2274,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "import",
             "resolved_target": "external:javascript:node:assert"
           }
@@ -3372,7 +3414,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "import",
             "resolved_target": "external:javascript:node:test"
           }
@@ -3566,7 +3608,7 @@
             "start_line": 12,
             "end_line": 20,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -3581,7 +3623,7 @@
             "start_line": 22,
             "end_line": 32,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -3596,7 +3638,7 @@
             "start_line": 34,
             "end_line": 41,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -3611,7 +3653,7 @@
             "start_line": 43,
             "end_line": 58,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -3626,7 +3668,7 @@
             "start_line": 60,
             "end_line": 68,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -3641,7 +3683,7 @@
             "start_line": 70,
             "end_line": 80,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -3656,7 +3698,7 @@
             "start_line": 82,
             "end_line": 85,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -3671,7 +3713,22 @@
             "start_line": 87,
             "end_line": 90,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
+            "kind": "call",
+            "resolved_target": "external:javascript:node:test",
+            "target_symbol": "default"
+          }
+        },
+        {
+          "test": "src/core/htmlDocument.test.ts",
+          "type": "calls",
+          "location": {
+            "path": "src/core/htmlDocument.test.ts",
+            "symbol": "test(\"allows wraps only when the selection keeps tags nested\", () => {\n  const source = '<p><b>bold</b> text <a href=\"x\">link</a><br><li>one<li>two</p>';\n  const document = parse(source);\n  const span = (text: string) => ({ start: source.indexOf(text), end: source.indexOf(text) + text.length });\n  assert.equal(document.canWrap(span(\"ld</b> te\")), false);\n  assert.equal(document.canWrap(span('ref=\"x')), false);\n  assert.equal(document.canWrap(span(\"one<li>two\")), false);\n  assert.equal(document.canWrap(span(\"bo\")), true);\n  assert.equal(document.canWrap(span(\"<b>bold</b> text\")), true);\n  assert.equal(document.canWrap(span(\"text <a\")), false);\n  assert.equal(document.canWrap(span(' text <a href=\"x\">link</a><br>')), true);\n})",
+            "start_line": 92,
+            "end_line": 103,
+            "extractor": "tree-sitter-typescript",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -3710,7 +3767,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "import",
             "resolved_target": "external:javascript:node:test"
           }
@@ -4223,7 +4280,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "import",
             "resolved_target": "external:javascript:vscode"
           },
@@ -4295,7 +4352,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "import",
             "resolved_target": "external:javascript:vscode-html-languageservice"
           },
@@ -4305,7 +4362,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "import",
             "resolved_target": "external:javascript:vscode-html-languageservice"
           },
@@ -4315,7 +4372,7 @@
             "start_line": 96,
             "end_line": 96,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "call",
             "resolved_target": "external:javascript:vscode-html-languageservice",
             "target_symbol": "createScanner"
@@ -4395,7 +4452,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "json-manifest",
-            "source_digest": "db8bf3d32d85b335c7ca145b7b2a8a664ef5e39210970076225dc1d282fa130c",
+            "source_digest": "0588d9f15a98ee48208ba5232058aace2e59eaa049909026eb5c794118d670f8",
             "kind": "file"
           }
         ]
@@ -4955,25 +5012,25 @@
             "start_line": 13,
             "end_line": 13,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "definition"
           },
           {
             "path": "src/commandHandlers.ts",
             "symbol": "showFailure",
-            "start_line": 24,
-            "end_line": 24,
+            "start_line": 25,
+            "end_line": 25,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "definition"
           },
           {
             "path": "src/commandHandlers.ts",
             "symbol": "activeHtmlEditor",
-            "start_line": 29,
-            "end_line": 29,
+            "start_line": 30,
+            "end_line": 30,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "definition"
           }
         ]
@@ -5880,7 +5937,7 @@
             "start_line": 6,
             "end_line": 6,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "definition"
           }
         ]
@@ -5950,7 +6007,7 @@
             "start_line": 3,
             "end_line": 3,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "import",
             "resolved_target": "src/core/htmlDocument.ts"
           }
@@ -5977,7 +6034,7 @@
             "start_line": 14,
             "end_line": 14,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "definition"
           },
           {
@@ -5986,7 +6043,7 @@
             "start_line": 25,
             "end_line": 25,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "definition"
           },
           {
@@ -5995,7 +6052,7 @@
             "start_line": 29,
             "end_line": 29,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "definition"
           }
         ]
@@ -6307,7 +6364,7 @@
             "start_line": 4,
             "end_line": 4,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "import",
             "resolved_target": "src/core/model.ts"
           }
@@ -6337,7 +6394,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8d409e3ea61ef7ec930df2a88e7731879be2f5dafd35ccbaaa27cf573b6cb687",
+            "source_digest": "8bf48f4712f461e4f8dc54a4fd9e0edc157d8667d36f30ebcd51d5c71754288d",
             "kind": "definition"
           },
           {
@@ -6346,7 +6403,7 @@
             "start_line": 6,
             "end_line": 6,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8d409e3ea61ef7ec930df2a88e7731879be2f5dafd35ccbaaa27cf573b6cb687",
+            "source_digest": "8bf48f4712f461e4f8dc54a4fd9e0edc157d8667d36f30ebcd51d5c71754288d",
             "kind": "definition"
           },
           {
@@ -6355,7 +6412,7 @@
             "start_line": 8,
             "end_line": 8,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8d409e3ea61ef7ec930df2a88e7731879be2f5dafd35ccbaaa27cf573b6cb687",
+            "source_digest": "8bf48f4712f461e4f8dc54a4fd9e0edc157d8667d36f30ebcd51d5c71754288d",
             "kind": "definition"
           }
         ]
@@ -8153,7 +8210,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "import",
             "resolved_target": "external:javascript:vscode"
           }
@@ -8176,7 +8233,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "import",
             "resolved_target": "src/core/documentCache.ts"
           }
@@ -8196,10 +8253,10 @@
           {
             "path": "src/commandHandlers.ts",
             "symbol": "transformOffset(anchor, edits)",
-            "start_line": 123,
-            "end_line": 123,
+            "start_line": 124,
+            "end_line": 124,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "call",
             "resolved_target": "src/core/editPlanner.ts",
             "target_symbol": "transformOffset"
@@ -8207,10 +8264,10 @@
           {
             "path": "src/commandHandlers.ts",
             "symbol": "transformOffset(active, edits)",
-            "start_line": 124,
-            "end_line": 124,
+            "start_line": 125,
+            "end_line": 125,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "call",
             "resolved_target": "src/core/editPlanner.ts",
             "target_symbol": "transformOffset"
@@ -8218,10 +8275,10 @@
           {
             "path": "src/commandHandlers.ts",
             "symbol": "planChangeTag(targets, newName)",
-            "start_line": 145,
-            "end_line": 145,
+            "start_line": 146,
+            "end_line": 146,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "call",
             "resolved_target": "src/core/editPlanner.ts",
             "target_symbol": "planChangeTag"
@@ -8245,7 +8302,7 @@
             "start_line": 3,
             "end_line": 9,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "import",
             "resolved_target": "src/core/editPlanner.ts"
           }
@@ -8268,7 +8325,7 @@
             "start_line": 10,
             "end_line": 10,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "import",
             "resolved_target": "src/core/htmlPolicy.ts"
           }
@@ -8288,10 +8345,10 @@
           {
             "path": "src/commandHandlers.ts",
             "symbol": "rangesEqual(previous.full, pairs[index]!.full)",
-            "start_line": 76,
-            "end_line": 76,
+            "start_line": 77,
+            "end_line": 77,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "call",
             "resolved_target": "src/core/model.ts",
             "target_symbol": "rangesEqual"
@@ -8299,10 +8356,10 @@
           {
             "path": "src/commandHandlers.ts",
             "symbol": "rangesOverlap(previous.full, pairs[index]!.full)",
-            "start_line": 76,
-            "end_line": 76,
+            "start_line": 77,
+            "end_line": 77,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "call",
             "resolved_target": "src/core/model.ts",
             "target_symbol": "rangesOverlap"
@@ -8310,10 +8367,10 @@
           {
             "path": "src/commandHandlers.ts",
             "symbol": "rangesEqual(previous, ranges[index]!)",
-            "start_line": 216,
-            "end_line": 216,
+            "start_line": 224,
+            "end_line": 224,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "call",
             "resolved_target": "src/core/model.ts",
             "target_symbol": "rangesEqual"
@@ -8337,7 +8394,7 @@
             "start_line": 11,
             "end_line": 11,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
+            "source_digest": "f0c5ecf0a4f31f4b3b6cc876a344398f9e62c66e884b3866b18d7653b8bf8788",
             "kind": "import",
             "resolved_target": "src/core/model.ts"
           }
@@ -8924,7 +8981,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "import",
             "resolved_target": "external:javascript:node:assert"
           }
@@ -8937,7 +8994,7 @@
       "to": "external:javascript:node:test",
       "type": "calls",
       "type_only": false,
-      "evidence_count": 8,
+      "evidence_count": 9,
       "evidence": {
         "status": "verified",
         "locations": [
@@ -8947,7 +9004,7 @@
             "start_line": 12,
             "end_line": 20,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -8958,7 +9015,7 @@
             "start_line": 22,
             "end_line": 32,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -8969,7 +9026,7 @@
             "start_line": 34,
             "end_line": 41,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "call",
             "resolved_target": "external:javascript:node:test",
             "target_symbol": "default"
@@ -8993,7 +9050,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "import",
             "resolved_target": "external:javascript:node:test"
           }
@@ -9016,7 +9073,7 @@
             "start_line": 3,
             "end_line": 3,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "import",
             "resolved_target": "src/core/htmlDocument.ts"
           }
@@ -9039,7 +9096,7 @@
             "start_line": 4,
             "end_line": 4,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
+            "source_digest": "4451772446ce8e3b500783daf33724d5aeb69fe470579f4a1e2a9837e5e9d1e8",
             "kind": "import",
             "resolved_target": "src/core/model.ts"
           }
@@ -9062,7 +9119,7 @@
             "start_line": 96,
             "end_line": 96,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "call",
             "resolved_target": "external:javascript:vscode-html-languageservice",
             "target_symbol": "createScanner"
@@ -9086,7 +9143,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "import",
             "resolved_target": "external:javascript:vscode-html-languageservice"
           },
@@ -9096,7 +9153,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "import",
             "resolved_target": "external:javascript:vscode-html-languageservice"
           }
@@ -9119,7 +9176,7 @@
             "start_line": 47,
             "end_line": 47,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "call",
             "resolved_target": "src/core/htmlPolicy.ts",
             "target_symbol": "normalizeHtmlTagName"
@@ -9130,7 +9187,7 @@
             "start_line": 48,
             "end_line": 48,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "call",
             "resolved_target": "src/core/htmlPolicy.ts",
             "target_symbol": "isVoidElement"
@@ -9141,7 +9198,7 @@
             "start_line": 60,
             "end_line": 60,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "call",
             "resolved_target": "src/core/htmlPolicy.ts",
             "target_symbol": "isOptionalEndElement"
@@ -9165,7 +9222,7 @@
             "start_line": 12,
             "end_line": 12,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "import",
             "resolved_target": "src/core/htmlPolicy.ts"
           }
@@ -9188,7 +9245,7 @@
             "start_line": 161,
             "end_line": 161,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "call",
             "resolved_target": "src/core/model.ts",
             "target_symbol": "rangeContains"
@@ -9199,7 +9256,7 @@
             "start_line": 164,
             "end_line": 164,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "call",
             "resolved_target": "src/core/model.ts",
             "target_symbol": "rangeContains"
@@ -9210,7 +9267,7 @@
             "start_line": 167,
             "end_line": 167,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "call",
             "resolved_target": "src/core/model.ts",
             "target_symbol": "rangeContains"
@@ -9234,7 +9291,7 @@
             "start_line": 3,
             "end_line": 11,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "a8963f3dad6993961d153448b6a9962c8252bd071b9ca136e6d8c6d095ad150b",
+            "source_digest": "67c145083153cae30640d3639ac7647608c93a58be81240fd80e65c75cc4ebdf",
             "kind": "import",
             "resolved_target": "src/core/model.ts"
           }
@@ -10538,1286 +10595,16 @@
     }
   ],
   "triggers": [],
-  "source_digest": "520209575977662079861bad066f26442af49a7afe8f681d039869f4ce187f66",
+  "source_digest": "d021d513bbed3019f0c8f93aac28f403b8ee880189f39bbae260e829c810e543",
   "changes": {
-    "added_nodes": [
-      {
-        "id": "external:javascript:node:crypto",
-        "path": "external:javascript:node:crypto",
-        "label": "node:crypto",
-        "type": "external",
-        "boundary": "External",
-        "entrypoints": [],
-        "tests": [],
-        "test_evidence": [],
-        "analysis": "reference-only",
-        "is_test": false,
-        "symbols": [],
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import { createHash } from \"node:crypto\";",
-              "start_line": 2,
-              "end_line": 2,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:crypto"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "createHash(\"sha256\")",
-              "start_line": 21,
-              "end_line": 21,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:crypto",
-              "target_symbol": "createHash"
-            }
-          ]
-        },
-        "callers": [
-          {
-            "id": "scripts/release-artifact.mjs",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "scripts/release-artifact.mjs",
-            "type": "imports",
-            "type_only": false
-          }
-        ],
-        "callees": [],
-        "parent": "External"
-      },
-      {
-        "id": "scripts/release-artifact.mjs",
-        "path": "scripts/release-artifact.mjs",
-        "label": "release-artifact.mjs",
-        "type": "module",
-        "boundary": "Repository",
-        "entrypoints": [],
-        "tests": [],
-        "test_evidence": [],
-        "analysis": "analyzed",
-        "is_test": false,
-        "symbols": [
-          "api",
-          "checkTag",
-          "command",
-          "digest",
-          "identity",
-          "publishGitHub",
-          "record",
-          "required",
-          "verify"
-        ],
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "command",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "definition"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "required",
-              "start_line": 14,
-              "end_line": 14,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "definition"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "digest",
-              "start_line": 20,
-              "end_line": 20,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "definition"
-            }
-          ]
-        },
-        "callers": [],
-        "callees": [
-          {
-            "id": "external:javascript:node:assert",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:child_process",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:child_process",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:crypto",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:crypto",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:fs",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:fs",
-            "type": "imports",
-            "type_only": false
-          }
-        ],
-        "parent": "scripts"
-      }
-    ],
+    "added_nodes": [],
     "removed_nodes": [],
-    "added_edges": [
-      {
-        "id": "edge:04f14591f5640fd4d315",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:assert",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import assert from \"node:assert/strict\";",
-              "start_line": 1,
-              "end_line": 1,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:assert"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:f4f64a593b2b139bf090",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:child_process",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "spawnSync(binary, args, { encoding: \"utf8\", timeout: 120_000, maxBuffer: 16 * 1024 * 1024 })",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:child_process",
-              "target_symbol": "spawnSync"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:fd536239dbc64ad8572e",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:child_process",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import { spawnSync } from \"node:child_process\";",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:child_process"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:57aecd24f8525fe93010",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:crypto",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "createHash(\"sha256\")",
-              "start_line": 21,
-              "end_line": 21,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:crypto",
-              "target_symbol": "createHash"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:686a5179503dd040e2ff",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:crypto",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import { createHash } from \"node:crypto\";",
-              "start_line": 2,
-              "end_line": 2,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:crypto"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:dc90432e94856040dd9a",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:fs",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 8,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "createReadStream(file)",
-              "start_line": 22,
-              "end_line": 22,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "createReadStream"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "readFile(\"package.json\", \"utf8\")",
-              "start_line": 27,
-              "end_line": 27,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "readFile"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "readdir(\".\")",
-              "start_line": 35,
-              "end_line": 35,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "readdir"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:d3987ac0244919f1f32e",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:fs",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 2,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import { createReadStream } from \"node:fs\";",
-              "start_line": 3,
-              "end_line": 3,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:fs"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import { appendFile, readFile, readdir, writeFile } from \"node:fs/promises\";",
-              "start_line": 4,
-              "end_line": 4,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:fs"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:aadcb8fbe2de1893a867",
-        "from": "src/commandHandlers.ts",
-        "to": "src/core/model.ts",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 4,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/commandHandlers.ts",
-              "symbol": "rangesEqual(previous.full, pairs[index]!.full)",
-              "start_line": 76,
-              "end_line": 76,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
-              "kind": "call",
-              "resolved_target": "src/core/model.ts",
-              "target_symbol": "rangesEqual"
-            },
-            {
-              "path": "src/commandHandlers.ts",
-              "symbol": "rangesOverlap(previous.full, pairs[index]!.full)",
-              "start_line": 76,
-              "end_line": 76,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
-              "kind": "call",
-              "resolved_target": "src/core/model.ts",
-              "target_symbol": "rangesOverlap"
-            },
-            {
-              "path": "src/commandHandlers.ts",
-              "symbol": "rangesEqual(previous, ranges[index]!)",
-              "start_line": 216,
-              "end_line": 216,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
-              "kind": "call",
-              "resolved_target": "src/core/model.ts",
-              "target_symbol": "rangesEqual"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:5e056269028d376616a3",
-        "from": "src/commandHandlers.ts",
-        "to": "src/core/model.ts",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/commandHandlers.ts",
-              "symbol": "import { rangesOverlap, rangesEqual, type CoreResult, type FailureReason, type OffsetRange, type TagPair, type TextEdit } from \"./core/model.ts\";",
-              "start_line": 11,
-              "end_line": 11,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "949ac826b038a55474929b7892b9a7ff626dd724354cad3c8a9ae74672a413fe",
-              "kind": "import",
-              "resolved_target": "src/core/model.ts"
-            }
-          ]
-        }
-      }
-    ],
-    "removed_edges": [
-      {
-        "id": "edge:7dad0d4032bec86a81df",
-        "from": "scripts/build-web-tests.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 4,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/build-web-tests.mjs",
-              "symbol": "path.resolve(path.dirname(fileURLToPath(import.meta.url)), \"..\")",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "520a3576c52fc66df070dc984ca0957a73341ec9913c7f628419f4b481bcac20",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            },
-            {
-              "path": "scripts/build-web-tests.mjs",
-              "symbol": "path.dirname(fileURLToPath(import.meta.url))",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "520a3576c52fc66df070dc984ca0957a73341ec9913c7f628419f4b481bcac20",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "dirname"
-            },
-            {
-              "path": "scripts/build-web-tests.mjs",
-              "symbol": "path.join(root, \"test\", \"web\", \"suite\", \"index.ts\")",
-              "start_line": 7,
-              "end_line": 7,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "520a3576c52fc66df070dc984ca0957a73341ec9913c7f628419f4b481bcac20",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:f8abcf7e1689ddb2643e",
-        "from": "scripts/check-media.mjs",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 9,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/check-media.mjs",
-              "symbol": "assert.deepEqual(actualIcon, expectedIcon, \"media/icon.png is not a direct downsample of the accepted Imagegen source.\")",
-              "start_line": 16,
-              "end_line": 16,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c2f6212322a25e076d4c75bb7adc9613e41b7f9de27480dc7840d488b4e49cb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            },
-            {
-              "path": "scripts/check-media.mjs",
-              "symbol": "assert.equal(metadata.format, \"png\", `${label} must be PNG.`)",
-              "start_line": 25,
-              "end_line": 25,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c2f6212322a25e076d4c75bb7adc9613e41b7f9de27480dc7840d488b4e49cb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "scripts/check-media.mjs",
-              "symbol": "assert.equal(metadata.width, expectedWidth, `${label} width changed.`)",
-              "start_line": 26,
-              "end_line": 26,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c2f6212322a25e076d4c75bb7adc9613e41b7f9de27480dc7840d488b4e49cb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:1de1df0fde80ccd7c070",
-        "from": "scripts/check-media.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 7,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/check-media.mjs",
-              "symbol": "path.resolve(path.dirname(fileURLToPath(import.meta.url)), \"..\")",
-              "start_line": 7,
-              "end_line": 7,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c2f6212322a25e076d4c75bb7adc9613e41b7f9de27480dc7840d488b4e49cb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            },
-            {
-              "path": "scripts/check-media.mjs",
-              "symbol": "path.dirname(fileURLToPath(import.meta.url))",
-              "start_line": 7,
-              "end_line": 7,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c2f6212322a25e076d4c75bb7adc9613e41b7f9de27480dc7840d488b4e49cb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "dirname"
-            },
-            {
-              "path": "scripts/check-media.mjs",
-              "symbol": "path.join(root, \"media\")",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c2f6212322a25e076d4c75bb7adc9613e41b7f9de27480dc7840d488b4e49cb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:9426c22133c8d0427908",
-        "from": "scripts/inspect-vsix.mjs",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 25,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/inspect-vsix.mjs",
-              "symbol": "assert.ok(filename.endsWith(\".vsix\"), \"No Tag Mate VSIX found.\")",
-              "start_line": 12,
-              "end_line": 12,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "ok"
-            },
-            {
-              "path": "scripts/inspect-vsix.mjs",
-              "symbol": "assert.ok((await stat(filename)).size < 5 * 1024 * 1024, \"VSIX exceeds the 5 MiB budget.\")",
-              "start_line": 13,
-              "end_line": 13,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "ok"
-            },
-            {
-              "path": "scripts/inspect-vsix.mjs",
-              "symbol": "assert.ok(names.has(required), `Missing packaged file: ${required}`)",
-              "start_line": 28,
-              "end_line": 28,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "ok"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:4a6264f3dd14a18cd6e1",
-        "from": "scripts/inspect-vsix.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 4,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/inspect-vsix.mjs",
-              "symbol": "path.resolve(path.dirname(fileURLToPath(import.meta.url)), \"..\")",
-              "start_line": 7,
-              "end_line": 7,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            },
-            {
-              "path": "scripts/inspect-vsix.mjs",
-              "symbol": "path.dirname(fileURLToPath(import.meta.url))",
-              "start_line": 7,
-              "end_line": 7,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "dirname"
-            },
-            {
-              "path": "scripts/inspect-vsix.mjs",
-              "symbol": "path.resolve(root, requested)",
-              "start_line": 10,
-              "end_line": 10,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:fb516270b10222eb6868",
-        "from": "scripts/inspect-vsix.mjs",
-        "to": "external:javascript:yauzl",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/inspect-vsix.mjs",
-              "symbol": "yauzl.open(file, { lazyEntries: true }, (error, zip) => {\n      if (error || !zip) return reject(error || new Error(\"Could not open VSIX.\"));\n      const names = new Set();\n      const contents = new Map();\n      const collected = new Set([\n        \"extension/package.json\",\n        \"extension/dist/node/extension.cjs\",\n        \"extension/dist/web/extension.cjs\",\n      ]);\n      zip.on(\"error\", reject);\n      zip.on(\"end\", () => resolve({ names, contents }));\n      zip.on(\"entry\", (entry) => {\n        names.add(entry.fileName);\n        if (!collected.has(entry.fileName)) return zip.readEntry();\n        zip.openReadStream(entry, (streamError, stream) => {\n          if (streamError || !stream) return reject(streamError || new Error(\"Could not read a packaged file.\"));\n          const chunks = [];\n          stream.on(\"data\", (chunk) => chunks.push(chunk));\n          stream.on(\"error\", reject);\n          stream.on(\"end\", () => {\n            contents.set(entry.fileName, Buffer.concat(chunks));\n            zip.readEntry();\n          });\n        });\n      });\n      zip.readEntry();\n    })",
-              "start_line": 67,
-              "end_line": 93,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "76c42f0e276508dd1d538945968ff5f93989289067e8906ddb311f35e57ff578",
-              "kind": "call",
-              "resolved_target": "external:javascript:yauzl",
-              "target_symbol": "open"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:38c5231415751361e8f2",
-        "from": "scripts/performance.mjs",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 6,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/performance.mjs",
-              "symbol": "assert.equal(warmup.ok, true)",
-              "start_line": 18,
-              "end_line": 18,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "03aa7d98824e0e01fc37f966bd837855089c251a8a85b22cfc43551d3b38c8e0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "scripts/performance.mjs",
-              "symbol": "assert.equal(parsed.ok, true)",
-              "start_line": 23,
-              "end_line": 23,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "03aa7d98824e0e01fc37f966bd837855089c251a8a85b22cfc43551d3b38c8e0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "scripts/performance.mjs",
-              "symbol": "assert.ok(median < budget, `${label} parse exceeded ${budget} ms: ${median.toFixed(2)} ms.`)",
-              "start_line": 28,
-              "end_line": 28,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "03aa7d98824e0e01fc37f966bd837855089c251a8a85b22cfc43551d3b38c8e0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "ok"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:bb788ad87f5b3d800e60",
-        "from": "scripts/performance.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 4,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/performance.mjs",
-              "symbol": "path.resolve(path.dirname(fileURLToPath(import.meta.url)), \"..\")",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "03aa7d98824e0e01fc37f966bd837855089c251a8a85b22cfc43551d3b38c8e0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            },
-            {
-              "path": "scripts/performance.mjs",
-              "symbol": "path.dirname(fileURLToPath(import.meta.url))",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "03aa7d98824e0e01fc37f966bd837855089c251a8a85b22cfc43551d3b38c8e0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "dirname"
-            },
-            {
-              "path": "scripts/performance.mjs",
-              "symbol": "path.join(root, output)",
-              "start_line": 33,
-              "end_line": 33,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "03aa7d98824e0e01fc37f966bd837855089c251a8a85b22cfc43551d3b38c8e0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:42c8716ecc3c4369a2f4",
-        "from": "scripts/performance.mjs",
-        "to": "external:javascript:node:perf_hooks",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 4,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/performance.mjs",
-              "symbol": "performance.now()",
-              "start_line": 21,
-              "end_line": 21,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "03aa7d98824e0e01fc37f966bd837855089c251a8a85b22cfc43551d3b38c8e0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:perf_hooks",
-              "target_symbol": "now"
-            },
-            {
-              "path": "scripts/performance.mjs",
-              "symbol": "performance.now()",
-              "start_line": 24,
-              "end_line": 24,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "03aa7d98824e0e01fc37f966bd837855089c251a8a85b22cfc43551d3b38c8e0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:perf_hooks",
-              "target_symbol": "now"
-            },
-            {
-              "path": "scripts/performance.mjs",
-              "symbol": "performance.now()",
-              "start_line": 48,
-              "end_line": 48,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "03aa7d98824e0e01fc37f966bd837855089c251a8a85b22cfc43551d3b38c8e0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:perf_hooks",
-              "target_symbol": "now"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:b798c867b5f02bdd2399",
-        "from": "scripts/performance.mjs",
-        "to": "external:javascript:node:vm",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/performance.mjs",
-              "symbol": "vm.runInNewContext(nodeBundle, {\n    Buffer,\n    TextDecoder,\n    TextEncoder,\n    exports: module.exports,\n    module,\n    require: (id) => {\n      assert.equal(id, \"vscode\", `Unexpected runtime import: ${id}`);\n      return vscode;\n    },\n  })",
-              "start_line": 49,
-              "end_line": 59,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "03aa7d98824e0e01fc37f966bd837855089c251a8a85b22cfc43551d3b38c8e0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:vm",
-              "target_symbol": "runInNewContext"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:593892e819d870d5e040",
-        "from": "scripts/render-media.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 5,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/render-media.mjs",
-              "symbol": "path.resolve(path.dirname(fileURLToPath(import.meta.url)), \"..\")",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "8fb0b7e46646f1a4c4f299b515a4ad1d5538d1ad59888d4fd52ea955824f85b0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            },
-            {
-              "path": "scripts/render-media.mjs",
-              "symbol": "path.dirname(fileURLToPath(import.meta.url))",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "8fb0b7e46646f1a4c4f299b515a4ad1d5538d1ad59888d4fd52ea955824f85b0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "dirname"
-            },
-            {
-              "path": "scripts/render-media.mjs",
-              "symbol": "path.join(root, \"media\")",
-              "start_line": 6,
-              "end_line": 6,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "8fb0b7e46646f1a4c4f299b515a4ad1d5538d1ad59888d4fd52ea955824f85b0",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:87a7dda272a5592793c7",
-        "from": "src/commandHandlers.ts",
-        "to": "src/core/model.ts",
-        "type": "imports",
-        "type_only": true,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/commandHandlers.ts",
-              "symbol": "import type { CoreResult, FailureReason, OffsetRange, TagPair, TextEdit } from \"./core/model.ts\";",
-              "start_line": 11,
-              "end_line": 11,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b90f140a7dd22f3571e96632eff02f386909c92e6de47fc9296b6098e4d521d7",
-              "kind": "import",
-              "resolved_target": "src/core/model.ts"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:6436d145a5cbc06e89cc",
-        "from": "src/core/documentCache.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 8,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/core/documentCache.test.ts",
-              "symbol": "assert.equal(first.ok, true)",
-              "start_line": 13,
-              "end_line": 13,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "fcc7d02f99fbd61c37b1bedb6d39a7fa6d48f6c7d1454da356d4efcb05803f3c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/core/documentCache.test.ts",
-              "symbol": "assert.equal(repeated.ok, true)",
-              "start_line": 14,
-              "end_line": 14,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "fcc7d02f99fbd61c37b1bedb6d39a7fa6d48f6c7d1454da356d4efcb05803f3c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/core/documentCache.test.ts",
-              "symbol": "assert.equal(first.value, repeated.value)",
-              "start_line": 15,
-              "end_line": 15,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "fcc7d02f99fbd61c37b1bedb6d39a7fa6d48f6c7d1454da356d4efcb05803f3c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:be1f9c00b827b9041e36",
-        "from": "src/core/editPlanner.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 43,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/core/editPlanner.test.ts",
-              "symbol": "assert.equal(parsed.ok, true)",
-              "start_line": 10,
-              "end_line": 10,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "128e1284cf91c647ce10a062e74a987628612b67ad626572db642c3e2ee52382",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/core/editPlanner.test.ts",
-              "symbol": "assert.notEqual(offset, -1)",
-              "start_line": 15,
-              "end_line": 15,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "128e1284cf91c647ce10a062e74a987628612b67ad626572db642c3e2ee52382",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "notEqual"
-            },
-            {
-              "path": "src/core/editPlanner.test.ts",
-              "symbol": "assert.equal(located.ok, true)",
-              "start_line": 17,
-              "end_line": 17,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "128e1284cf91c647ce10a062e74a987628612b67ad626572db642c3e2ee52382",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:272dd0f8923b1885c34e",
-        "from": "src/core/htmlDocument.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 34,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/core/htmlDocument.test.ts",
-              "symbol": "assert.equal(result.ok, true)",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/core/htmlDocument.test.ts",
-              "symbol": "assert.equal(inner.ok, true)",
-              "start_line": 16,
-              "end_line": 16,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/core/htmlDocument.test.ts",
-              "symbol": "assert.equal(inner.value.pair.full.start, source.indexOf(\"<div data\"))",
-              "start_line": 17,
-              "end_line": 17,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "4a8967e00f333c31e90044aa8bee45b47cd2bbae35b09c7e8686c3c1c0829895",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:bd6f9262b5f99b834db0",
-        "from": "test/integration/run-vsix.mjs",
-        "to": "external:javascript:node:os",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 2,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "test/integration/run-vsix.mjs",
-              "symbol": "os.tmpdir()",
-              "start_line": 14,
-              "end_line": 14,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "338e28b85798063fd5f683ec87f04d1b2a353fc9fc1371e2f2451a327e04e1ea",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:os",
-              "target_symbol": "tmpdir"
-            },
-            {
-              "path": "test/integration/run-vsix.mjs",
-              "symbol": "os.tmpdir()",
-              "start_line": 34,
-              "end_line": 34,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "338e28b85798063fd5f683ec87f04d1b2a353fc9fc1371e2f2451a327e04e1ea",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:os",
-              "target_symbol": "tmpdir"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:f84beb535c5ac1b2cbf8",
-        "from": "test/integration/run-vsix.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 14,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "test/integration/run-vsix.mjs",
-              "symbol": "path.resolve(path.dirname(fileURLToPath(import.meta.url)), \"..\", \"..\")",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "338e28b85798063fd5f683ec87f04d1b2a353fc9fc1371e2f2451a327e04e1ea",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            },
-            {
-              "path": "test/integration/run-vsix.mjs",
-              "symbol": "path.dirname(fileURLToPath(import.meta.url))",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "338e28b85798063fd5f683ec87f04d1b2a353fc9fc1371e2f2451a327e04e1ea",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "dirname"
-            },
-            {
-              "path": "test/integration/run-vsix.mjs",
-              "symbol": "path.resolve(root, requested)",
-              "start_line": 11,
-              "end_line": 11,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "338e28b85798063fd5f683ec87f04d1b2a353fc9fc1371e2f2451a327e04e1ea",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:c90cd7ab6fd4b86df840",
-        "from": "test/integration/run.mjs",
-        "to": "external:javascript:node:os",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 2,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "test/integration/run.mjs",
-              "symbol": "os.tmpdir()",
-              "start_line": 11,
-              "end_line": 11,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4ef4bcb52c3c3bce62f31f498e4cf82a016362cf8d5ba21926a4a9256fea6699",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:os",
-              "target_symbol": "tmpdir"
-            },
-            {
-              "path": "test/integration/run.mjs",
-              "symbol": "os.tmpdir()",
-              "start_line": 29,
-              "end_line": 29,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4ef4bcb52c3c3bce62f31f498e4cf82a016362cf8d5ba21926a4a9256fea6699",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:os",
-              "target_symbol": "tmpdir"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:456c15978e89d2f6c7bf",
-        "from": "test/integration/run.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 8,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "test/integration/run.mjs",
-              "symbol": "path.resolve(path.dirname(fileURLToPath(import.meta.url)), \"..\", \"..\")",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4ef4bcb52c3c3bce62f31f498e4cf82a016362cf8d5ba21926a4a9256fea6699",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            },
-            {
-              "path": "test/integration/run.mjs",
-              "symbol": "path.dirname(fileURLToPath(import.meta.url))",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4ef4bcb52c3c3bce62f31f498e4cf82a016362cf8d5ba21926a4a9256fea6699",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "dirname"
-            },
-            {
-              "path": "test/integration/run.mjs",
-              "symbol": "path.join(os.tmpdir(), \"tag-mate-\")",
-              "start_line": 11,
-              "end_line": 11,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4ef4bcb52c3c3bce62f31f498e4cf82a016362cf8d5ba21926a4a9256fea6699",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:1b3535de61cfd81d7c22",
-        "from": "test/web/run.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 5,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "test/web/run.mjs",
-              "symbol": "path.resolve(path.dirname(fileURLToPath(import.meta.url)), \"..\", \"..\")",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "9a9c4d365a2f6ae8c6ddb900780f4b7559e27072d7159cc4a2a9b2f33702cfa1",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            },
-            {
-              "path": "test/web/run.mjs",
-              "symbol": "path.dirname(fileURLToPath(import.meta.url))",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "9a9c4d365a2f6ae8c6ddb900780f4b7559e27072d7159cc4a2a9b2f33702cfa1",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "dirname"
-            },
-            {
-              "path": "test/web/run.mjs",
-              "symbol": "path.join(root, \"dist\", \"web\", \"test\", \"suite\", \"index.cjs\")",
-              "start_line": 10,
-              "end_line": 10,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "9a9c4d365a2f6ae8c6ddb900780f4b7559e27072d7159cc4a2a9b2f33702cfa1",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            }
-          ]
-        }
-      }
-    ],
+    "added_edges": [],
+    "removed_edges": [],
     "boundary_changes": [],
     "new_cycles": [],
-    "changed": true,
-    "changed_node_ids": [
-      "external:javascript:node:assert",
-      "external:javascript:node:child_process",
-      "external:javascript:node:crypto",
-      "external:javascript:node:fs",
-      "external:javascript:node:os",
-      "external:javascript:node:path",
-      "external:javascript:node:perf_hooks",
-      "external:javascript:node:vm",
-      "external:javascript:yauzl",
-      "scripts/build-web-tests.mjs",
-      "scripts/check-media.mjs",
-      "scripts/inspect-vsix.mjs",
-      "scripts/performance.mjs",
-      "scripts/release-artifact.mjs",
-      "scripts/render-media.mjs",
-      "src/commandHandlers.ts",
-      "src/core/documentCache.test.ts",
-      "src/core/editPlanner.test.ts",
-      "src/core/htmlDocument.test.ts",
-      "src/core/model.ts",
-      "test/integration/run-vsix.mjs",
-      "test/integration/run.mjs",
-      "test/web/run.mjs"
-    ]
+    "changed": false,
+    "changed_node_ids": []
   },
-  "generation_id": "acb8500f361e17d21ed90ee43d297dc69dc3aa6969ea12a29e2baf8584f805e0"
+  "generation_id": "b32454e94c708e47ae90f73079e0befe2b7e3bfbea9e67b957f9036825a25c29"
 }

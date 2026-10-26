@@ -1,7 +1,7 @@
 # Code map: vscode-tag-mate
 
-Generated: 2026-09-07T03:20:47Z | Commit: `99f7b448e58e` | Schema: 2
-Generation: `acb8500f361e17d21ed90ee43d297dc69dc3aa6969ea12a29e2baf8584f805e0`
+Generated: 2026-10-26T04:43:31Z | Commit: `920d146d2b77` | Schema: 2
+Generation: `b32454e94c708e47ae90f73079e0befe2b7e3bfbea9e67b957f9036825a25c29`
 Scope: . | Inventory: working-tree
 Nodes: 46 | Edges: 120 | Flows: 0
 
@@ -9,7 +9,7 @@ Nodes: 46 | Edges: 120 | Flows: 0
 
 - Analysis: **partial**; 27 analyzed of 28 included files.
 - Configuration files: 1; omitted untracked files: 0.
-- Unresolved references and analysis limits: 218.
+- Unresolved references and analysis limits: 225.
 - Static references and call paths do not prove runtime execution or test coverage.
 
 ## Modules
@@ -111,7 +111,7 @@ Nodes: 46 | Edges: 120 | Flows: 0
 
 ## Architecture changes
 
-- Nodes: +2 / -0; edges: +9 / -20.
+- Nodes: +0 / -0; edges: +0 / -0.
 - Boundary changes: 0; new cycles: 0.
 
 ## Read next
